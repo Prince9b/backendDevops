@@ -1,5 +1,5 @@
 # Étape 1 : Build de l'application React
-FROM node:18-alpine AS build
+FROM node:20 AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
