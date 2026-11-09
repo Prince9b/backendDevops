@@ -1,6 +1,11 @@
 # Étape 1 : Build de l'application React
 FROM node:20 AS build
 WORKDIR /app
+
+# On déclare qu'on accepte un argument venant de l'extérieur
+ARG VITE_API_URL
+ENV VITE_API_URL=$VITE_API_URL
+
 COPY package*.json ./
 RUN npm install
 COPY . .
