@@ -1,0 +1,19 @@
+# Fichiers de configuration sensibles (LE PLUS IMPORTANT)
+.env
+
+# Fichiers Python / Django
+__pycache__/
+*.py[cod]
+*$py.class
+db.sqlite3
+staticfiles/
+media/
+
+# Environnements virtuels locaux (si vous en avez un sur votre PC)
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
