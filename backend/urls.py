@@ -10,5 +10,6 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='refresh-refresh'),
     path('api-auth/', include('rest_framework.urls')),
     path('api/user/', RetrieveUserView.as_view(), name='user'),
-    path('api/', include('api.urls') )
+    path('api/', include('api.urls')),
+    path('', include('django_prometheus.urls')),
 ]

@@ -6,7 +6,6 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  # Ajout de la surveillance pour tes autres conteneurs Docker
-  - job_name: 'docker-containers'
+  - job_name: 'django-backend'
     static_configs:
-      - targets: ['web:8000', 'frontend:80']
+      - targets: ['web:8000']
